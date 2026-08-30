@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tyan-an 的个人主页 - 热爱技术｜音游爱好者｜学生｜开发AI者｜持续学习中｜湖南大学" />
+  <title>Tyan-an · 个人主页</title>
+  <!-- 站点图标 -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/avatar.svg" />
+  <!-- Font Awesome 图标库（社交/技能图标） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts 无衬线字体（海外访问；国内自动回退系统字体） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <!-- 主样式 -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 自定义光标跟随光斑 -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+  <!-- ========= 导航栏 ========= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero" aria-label="返回顶部">
+        <span class="logo-mark">Tyan-an</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a class="nav-link" href="#about">关于</a>
+        <a class="nav-link" href="#works">作品</a>
+        <a class="nav-link" href="#moment">动态</a>
+        <a class="nav-link" href="#contact">联系</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- ========= Hero 主视觉区 ========= -->
+    <section class="hero" id="hero">
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="hero-eyebrow">HELLO, 我是</p>
+        <h1 class="hero-title">Tyan-an</h1>
+        <p class="hero-sub">用代码构建美学，热爱技术，热爱每一段旋律</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#works">查看我的作品</a>
+          <a class="btn btn-ghost" href="#contact">与我合作</a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">学生</span>
+          <span class="tag">使用 AI 者</span>
+          <span class="tag">音游玩家</span>
+          <span class="tag">自媒体</span>
+          <span class="tag">湖南大学</span>
+        </div>
+        <a class="hero-scroll" href="#about" aria-label="向下滚动">
+          <span class="scrolldown"></span>
+        </a>
+      </div>
+    </section>
+    <!-- ========= 关于我 ========= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <h2 class="section-title">关于我</h2>
+          <p class="section-caption">About Me</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-avatar reveal">
+            <div class="avatar-ring">
+              <img src="assets/avatar.svg" alt="Tyan-an 头像" />
+            </div>
+            <p class="avatar-name">Tyan-an</p>
+            <p class="avatar-role">储能科学与工程 · 在读本科生</p>
+          </div>
+          <div class="about-text reveal">
+            <p>
+              你好，我是 <strong>Tyan-an</strong>，一名热爱技术与创作的学生，就读于
+              <strong>湖南大学</strong>。我的兴趣横跨前端开发、音游、视频剪辑与文字创作。
+            </p>
+            <p>
+              我乐于借助 AI 工具高效地推进想法，从前端页面到算法逻辑，从音乐谱面到锐评写作，
+              不断探索把「灵感」变成「作品」的过程。目前专注在<strong>储能科学与工程</strong>专业的学习，
+              同时持续打磨自己的技术与创作能力。
+            </p>
+            <p class="about-hobby">
+              <span class="hobby-label">爱好</span>
+              美食 · 音乐 · 游戏
+            </p>
+            <a class="btn btn-outline" href="#works">看看我在做什么 &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= 精选作品 / 项目 ========= -->
+    <section class="section section-alt" id="works">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02</span>
+          <h2 class="section-title">精选作品</h2>
+          <p class="section-caption">Selected Works</p>
+        </div>
+        <div class="works-grid">
+          <!-- 作品1：LuminousChess 棋艺流光 -->
+          <article class="work-card reveal">
+            <a class="work-cover" href="https://tyanbilibili.github.io/LuminousChess/" target="_blank" rel="noopener">
+              <div class="cover-svg cover-chess">
+                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="160" fill="url(#gc1)"/>
+                  <g fill="none" stroke="rgba(255,255,255,.45)" stroke-width="1.2">
+                    <rect x="40" y="40" width="34" height="34" rx="4"/>
+                    <rect x="40" y="86" width="34" height="34" rx="4"/>
+                    <rect x="86" y="40" width="34" height="34" rx="4"/>
+                    <rect x="86" y="86" width="34" height="34" rx="4"/>
+                    <rect x="132" y="40" width="34" height="34" rx="4"/>
+                    <rect x="132" y="86" width="34" height="34" rx="4"/>
+                    <rect x="178" y="40" width="34" height="34" rx="4"/>
+                    <rect x="178" y="86" width="34" height="34" rx="4"/>
+                  </g>
+                  <circle cx="200" cy="64" r="26" fill="rgba(255,255,255,.18)"/>
+                  <circle cx="200" cy="64" r="9" fill="#fff" opacity=".85"/>
+                  <defs>
+                    <linearGradient id="gc1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#0f2027"/><stop offset="1" stop-color="#2c5364"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="work-mask"><span>查看项目</span></div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-title">LuminousChess</h3>
+              </div>
+              <p class="work-desc">花样下棋 · 棋艺流光。集三种棋、人机五难度、特效与结算、存档于一体的单机版棋艺合集，含局域网联机版本。</p>
+              <div class="work-tags">
+                <span>JavaScript</span><span>HTML5</span><span>WebRTC</span>
+              </div>
+            </div>
+          </article>
+          <!-- 作品2：TNTmanagerSimulator 时代少年团经纪人模拟器 -->
+          <article class="work-card reveal">
+            <a class="work-cover" href="https://tyanbilibili.github.io/TNTmanagerSimulator/" target="_blank" rel="noopener">
+              <div class="cover-svg cover-tnt">
+                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="160" fill="url(#gc2)"/>
+                  <g fill="rgba(255,255,255,.25)">
+                    <circle cx="70" cy="70" r="22"/><rect x="64" y="92" width="12" height="26" rx="5"/>
+                    <circle cx="130" cy="70" r="22"/><rect x="124" y="92" width="12" height="26" rx="5"/>
+                    <circle cx="190" cy="70" r="22"/><rect x="184" y="92" width="12" height="26" rx="5"/>
+                  </g>
+                  <path d="M40 130 H220" stroke="rgba(255,255,255,.5)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+                  <defs>
+                    <linearGradient id="gc2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#4b6cb7"/><stop offset="1" stop-color="#182848"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="work-mask"><span>查看项目</span></div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-title">TNTmanagerSimulator</h3>
+              </div>
+              <p class="work-desc">时代少年团经纪人模拟器。模拟运营、事件抉择与养成的一次趣味成长游戏。</p>
+              <div class="work-tags">
+                <span>JavaScript</span><span>Game</span>
+              </div>
+            </div>
+          </article>
+          <!-- 作品3：小说《斗“罗”大陆》 -->
+          <article class="work-card reveal">
+            <a class="work-cover" href="https://fanqienovel.com/page/7349578059772595262" target="_blank" rel="noopener">
+              <div class="cover-svg cover-novel">
+                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="160" fill="url(#gc3)"/>
+                  <g fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2">
+                    <path d="M60 60 H200"/>
+                    <path d="M60 82 H200"/>
+                    <path d="M60 104 H160"/>
+                  </g>
+                  <circle cx="200" cy="60" r="26" fill="rgba(255,255,255,.14)"/>
+                  <text x="200" y="70" text-anchor="middle" fill="rgba(255,255,255,.9)" font-size="26">罗</text>
+                  <defs>
+                    <linearGradient id="gc3" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#603813"/><stop offset="1" stop-color="#b29f94"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="work-mask"><span>阅读作品</span></div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-title">小说《斗“罗”大陆》</h3>
+              </div>
+              <p class="work-desc">创作的长篇网络小说，连载于番茄小说。已上线可阅读。</p>
+              <div class="work-tags">
+                <span>小说</span><span>网文</span>
+              </div>
+            </div>
+          </article>
+          <!-- 作品4：锐评集 -->
+          <article class="work-card reveal">
+            <a class="work-cover" href="projects/reviews.html" target="_blank" rel="noopener">
+              <div class="cover-svg cover-review">
+                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="160" fill="url(#gc4)"/>
+                  <g fill="rgba(255,255,255,.3)">
+                    <rect x="70" y="46" width="120" height="12" rx="6"/>
+                    <rect x="70" y="70" width="94" height="12" rx="6"/>
+                    <rect x="70" y="94" width="120" height="12" rx="6"/>
+                  </g>
+                  <circle cx="196" cy="104" r="22" fill="rgba(255,255,255,.14)"/>
+                  <text x="196" y="114" text-anchor="middle" fill="#fff" font-size="24">评</text>
+                  <defs>
+                    <linearGradient id="gc4" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#8e2de2"/><stop offset="1" stop-color="#4a00e0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="work-mask"><span>阅读锐评</span></div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-title">锐评集</h3>
+              </div>
+              <p class="work-desc">收录 8 篇书评与杂谈，点开即读。</p>
+              <div class="work-tags">
+                <span>书评</span><span>杂谈</span><span>文字创作</span>
+              </div>
+            </div>
+          </article>
+          <!-- 作品5：音游《MalodyV》谱面合集 -->
+          <article class="work-card reveal">
+            <a class="work-cover" href="projects/charts.html" target="_blank" rel="noopener">
+              <div class="cover-svg cover-music">
+                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="160" fill="url(#gc5)"/>
+                  <g stroke="rgba(255,255,255,.5)" stroke-width="3" stroke-linecap="round">
+                    <path d="M70 110 l26 -34"/><path d="M120 110 l26 -34"/><path d="M170 110 l26 -34"/>
+                  </g>
+                  <g fill="rgba(255,255,255,.85)">
+                    <circle cx="70" cy="114" r="7"/><circle cx="120" cy="114" r="7"/><circle cx="170" cy="114" r="7"/>
+                  </g>
+                  <path d="M60 46 H200" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-dasharray="4 5"/>
+                  <defs>
+                    <linearGradient id="gc5" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#ff512f"/><stop offset="1" stop-color="#dd2476"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="work-mask"><span>浏览谱面</span></div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-title">音游《MalodyV》谱面合集</h3>
+              </div>
+              <p class="work-desc">累计 11 张自制 Malody 谱面。</p>
+              <div class="work-tags">
+                <span>音游</span><span>谱面创作</span><span>MalodyV</span>
+              </div>
+            </div>
+          </article>
+          <!-- 作品6：校长（第二本小说） -->
+          <article class="work-card reveal">
+            <a class="work-cover" href="https://fanqienovel.com/page/7349613770139763262" target="_blank" rel="noopener">
+              <div class="cover-svg cover-principal">
+                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="260" height="160" fill="url(#gc6)"/>
+                  <g fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2">
+                    <rect x="92" y="48" width="76" height="76" rx="8"/>
+                    <path d="M100 66 H160"/><path d="M100 84 H160"/><path d="M100 102 H140"/>
+                  </g>
+                  <circle cx="200" cy="50" r="20" fill="rgba(255,255,255,.14)"/>
+                  <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="20">校</text>
+                  <defs>
+                    <linearGradient id="gc6" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#134e5e"/><stop offset="1" stop-color="#71b280"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="work-mask"><span>阅读作品</span></div>
+            </a>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-title">小说《校长》</h3>
+              </div>
+              <p class="work-desc">创作的一部短篇小说，连载于番茄小说，已上线可阅读。</p>
+              <div class="work-tags">
+                <span>小说</span><span>网文</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ========= 技能 / 工具 ========= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <h2 class="section-title">技能与工具</h2>
+          <p class="section-caption">Skills</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-level="80">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h4>AI 前端开发</h4>
+            <p>借助 AI 工具高效完成前端页面、交互与逻辑开发</p>
+            <div class="skill-bar"><span style="width:80%"></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="78">
+            <div class="skill-icon"><i class="fa-solid fa-clapperboard"></i></div>
+            <h4>视频剪辑</h4>
+            <p>素材重组、节奏把控与成片调色，产出完整作品</p>
+            <div class="skill-bar"><span style="width:78%"></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="88">
+            <div class="skill-icon"><i class="fa-solid fa-music"></i></div>
+            <h4>音游 / 谱面创作</h4>
+            <p>Malody 音游谱面设计，节奏对应与难度编排</p>
+            <div class="skill-bar"><span style="width:88%"></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="82">
+            <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h4>锐评写作</h4>
+            <p>犀利而风趣的书评、杂谈，输出观点与思考</p>
+            <div class="skill-bar"><span style="width:82%"></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="70">
+            <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h4>储能科学与工程</h4>
+            <p>能源与储能方向的学业钻研与实践</p>
+            <div class="skill-bar"><span style="width:70%"></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="75">
+            <div class="skill-icon"><i class="fa-solid fa-javascript"></i></div>
+            <h4>JavaScript / HTML</h4>
+            <p>原生前端开发基础，实现交互与动态页面</p>
+            <div class="skill-bar"><span style="width:75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= 动态 / 最新想法 ========= -->
+    <section class="section section-alt" id="moment">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">04</span>
+          <h2 class="section-title">动态</h2>
+          <p class="section-caption">Moment</p>
+        </div>
+        <div class="moment-box reveal">
+          <div class="moment-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"灵感不是等来的，而是不断尝试把它变成作品的产物。把热爱做到极致，本身就是一种创作。"</p>
+          </div>
+          <div class="moment-meta">
+            <span>最近更新 · 来自我的状态</span>
+            <a class="moment-link" href="https://github.com/tyanbilibili" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> 查看我的 GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ========= 页脚 / 联系 ========= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-contact">
+        <h3 class="footer-title">与我联系</h3>
+        <p class="footer-sub">有合作或交流想法？欢迎来聊聊。</p>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <input type="text" id="c-name" name="name" placeholder="你的姓名" required />
+            <input type="email" id="c-email" name="email" placeholder="你的邮箱" required />
+          </div>
+          <textarea id="c-msg" name="message" placeholder="想说的话..." rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">发送信息</button>
+        </form>
+      </div>
+      <div class="footer-links">
+        <div class="footer-social">
+          <a href="https://space.bilibili.com/497820481" target="_blank" rel="noopener" aria-label="B站" class="social-btn"><i class="fa-brands fa-bilibili"></i></a>
+          <a href="https://github.com/tyanbilibili" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com" target="_blank" rel="noopener" aria-label="X" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.xiaohongshu.com" target="_blank" rel="noopener" aria-label="小红书" class="social-btn"><i class="fa-solid fa-book-open"></i></a>
+        </div>
+        <div class="footer-emails">
+          <a href="mailto:tyan-an@foxmail.com">tyan-an@foxmail.com</a>
+          <a href="mailto:tyanbilibili@gmail.com">tyanbilibili@gmail.com</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Tyan-an · 用热爱构建每一行代码</p>
+    </div>
+  </footer>
+  <!-- 主交互脚本 -->
+  <script src="js/main.js"></script>
+</body>
+</html>
