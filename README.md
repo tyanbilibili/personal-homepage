@@ -56,3 +56,9 @@ python -m http.server 8000
 - 站点图标与头像使用 [DiceBear](https://www.dicebear.com/) 开源生成，无版权风险。
 - 图标库使用 Font Awesome（CDN），字体使用 Inter / Noto Sans SC（Google Fonts，国内自动回退系统字体）。
 - 站内所有链接采用相对路径，可正常用于 GitHub Pages 的子路径部署。
+
+---
+
+## 更新说明
+
+- **2026-09-05**：本次更新了个人主页编辑器，实现了看不懂代码也能方便修改个人主页内容的功能。该编辑器目前处于初代，功能难免不全、不好用之类的。后续会优化。
